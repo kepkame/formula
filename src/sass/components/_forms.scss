@@ -1,0 +1,40 @@
+// Forms
+
+label {
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-text-light;
+}
+
+input::placeholder {
+    color: #ABABAB;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 16px 21px;
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="tel"] {
+    
+}
+
+input[type="checkbox"] {
+    
+}
+
+input[type="submit"] {
+    padding-right: 28px;
+    padding-left: 28px;
+}
+
+textarea {
+
+}

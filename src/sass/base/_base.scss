@@ -1,0 +1,158 @@
+// Base styles
+
+html, body {
+    font-family: $ff-text;
+    // color: ;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $ff-text;
+    font-weight: 600;
+    color: $color-title;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 31px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+h4 {
+    // font-size: ;
+    // line-height: ;
+}
+
+h5 {
+    // font-size: ;
+    // line-height: ;
+}
+
+h6 {
+    // font-size: ;
+    // line-height: ;
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 8px 0;
+}
+
+b {
+    font-weight: 600;
+}
+
+a {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+        // color: $color-primary-hover;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.title-line {
+    position: relative;
+    margin-bottom: 63px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 105px;
+        height: 3px;
+        background-color: $color-primary;
+    }
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    bottom: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 850px) {
+    h1, h2, h3, h4, h5, h6 {
+        // margin-top: ;
+        // margin-bottom: ;
+    }
+
+    h1 {
+        // font-size: ;
+        // line-height: ;
+    }
+    
+    h2 {
+        // font-size: ;
+        // line-height: ;
+    }
+    
+    h3 {
+        // font-size: ;
+        // line-height: ;
+    }
+    
+    h4 {
+        // font-size: ;
+        // line-height: ;
+    }
+    
+    h5 {
+        // font-size: ;
+        // line-height: ;
+    }
+
+    h6 {
+        // font-size: ;
+        // line-height: ;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 29px;
+    }
+}
+
+@media (min-width: 850px) {
+    .container {
+        max-width: 1420px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}

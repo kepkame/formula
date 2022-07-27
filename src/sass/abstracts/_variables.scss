@@ -1,0 +1,19 @@
+// SASS variables
+
+// Primary
+$color-primary: #207ff1;
+$color-primary-hover: mix(#207ff1, #000000, 75);
+// $color-secondary: ;
+$color-bg: #f1f6fc;
+
+// Text
+$color-text: #2b2b2b;
+$color-text-light: mix($color-text, #ffffff, 64.5);
+$color-title: #000000;
+
+// Status
+// $color-error: #993643;
+// $color-success: #40806d;
+// $color-warning: #e5a667;
+
+$ff-text: SFUIText, Arial, sans-serif;
