@@ -207,6 +207,10 @@
                 background-color: $color-primary;
             }
         }
+
+        &:focus {
+            outline: none;
+        }
     }
 
     .cards__link-more {

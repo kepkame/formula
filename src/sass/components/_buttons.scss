@@ -22,6 +22,10 @@
         text-decoration: none;
         background-color: $color-primary-hover;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .btn--outline {
@@ -100,6 +104,43 @@
 
         &:after {
             transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+}
+
+@media (min-width: 850px) {
+    .btn-call {
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: $color-primary;
+        border: none;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+        animation-delay: 1s;
+
+        &:focus,
+        &:hover {
+            background-color: $color-primary-hover;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 21px;
+            height: 21px;
+            transform: translate(-50%, -50%);
+        }
+
+        path {
+            stroke: #ffffff;
         }
     }
 }

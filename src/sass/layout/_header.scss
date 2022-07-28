@@ -42,6 +42,10 @@
         text-decoration: none;
     }
 
+    &:focus {
+        outline: none;
+    }
+
     svg {
         width: 40px;
         height: 36px;
@@ -240,6 +244,15 @@
 
         span {
             display: none;
+        }
+
+        &:focus path,
+        &:hover path {
+            fill: $color-primary-hover;
+        }
+
+        &:focus {
+            outline: none;
         }
     }
 

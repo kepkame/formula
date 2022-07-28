@@ -62,11 +62,8 @@ img {
 }
 
 body.fixed {
-    position: fixed;
-    top: 0;
-    margin-left: -100%;
-    padding-left: 100%;
     overflow: hidden;
+    padding-right: 0;
 }
 
 .container {
@@ -106,7 +103,7 @@ body.fixed {
 // scrollbar
 ::-webkit-scrollbar {
     height: 7px;
-    width: 0px;
+    width: 5px;
     border-radius: 5px;
 }
 ::-webkit-scrollbar-track {

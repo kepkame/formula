@@ -48,3 +48,43 @@ input[type="submit"] {
 textarea {
     max-width: 100%;
 }
+
+.form {
+
+}
+
+.form__row {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+}
+
+.form__textarea {
+    min-width: 100%;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+
+
+.form--feedback {
+    
+    label {
+        display: block;
+        margin-bottom: 7px;
+        margin-left: 10px;
+    }
+}
+
+.form__acceptance label {
+    margin-left: 0;
+    margin-bottom: 0;
+}

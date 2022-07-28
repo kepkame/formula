@@ -17,6 +17,10 @@
     &:Hover {
         text-decoration: none;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .b-contacts__address {
