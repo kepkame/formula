@@ -5,22 +5,6 @@
     padding-top: 40px;
 }
 
-.promo__wrapper {
-
-}
-
-.promo__row {
-
-}
-
-.promo__row--text {
-
-}
-
-.promo__inner {
-    
-}
-
 .promo__title {
     max-width: 310px;
     margin-top: 0;
@@ -51,26 +35,6 @@
     padding-bottom: 40px;
 }
 
-.about__wrapper {
-
-}
-
-.about__row {
-
-}
-
-.about__row--header {
-
-}
-
-.about__header-col {
-
-}
-
-.about__header-col--title {
-
-}
-
 .about__title {
     margin-top: 0;
 }
@@ -83,10 +47,6 @@
     margin-top: 0;
 }
 
-.about__row--cards {
-    
-}
-
 // Section – Offer
 .offer {
     position: relative;
@@ -94,14 +54,6 @@
     padding-top: 61px;
     padding-bottom: 22px;
     overflow: hidden;
-}
-
-.offer__wrapper {
-
-}
-
-.offer__row {
-
 }
 
 .offer__row--text {
@@ -239,6 +191,7 @@
 
         .cards__item {
             flex-basis: 48%;
+            max-width: 48%;
             margin-right: 4%;
             margin-top: 30px;
 
@@ -403,6 +356,7 @@
 
     .about__row--cards .cards.cards--advantages .cards__item {
         flex-basis: 23.41%;
+        max-width: 23.41%;
         margin-right: 2.12%;
         margin-top: 0;
 
@@ -421,6 +375,7 @@
 
     .merit__list .cards__item {
         flex-basis: 31.9%;
+        max-width: 31.9%;
         margin-right: 2.15%;
         margin-top: 0;
 

@@ -120,10 +120,11 @@
         border: none;
         border-radius: 50%;
         transition: background-color 0.3s ease;
-        cursor: pointer;
         opacity: 0;
         animation: fadeIn 0.5s forwards;
         animation-delay: 1s;
+        cursor: pointer;
+        z-index: 99;
 
         &:focus,
         &:hover {

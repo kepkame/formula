@@ -39,10 +39,13 @@ jQuery(document).ready(function($){
       banner.removeClass('banner-stock--hover');
     });
   }
-  
+
   if ($('#banner-stock').length) {
     wavingHand($('#banner-stock'));
   }
+
+  // Mask phone
+  $('input[type="tel"]').mask("+7 (___) ___ - __ - __");
 
 });
 // jQuery/

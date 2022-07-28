@@ -32,6 +32,7 @@ gulp.task('sass', function () {
 
 const jsFiles = [
   './src/js/jquery.min.js',
+  './src/js/jquery.maskedinput.min.js',
   './src/js/menu.js',
   './src/js/popups.js',
   './src/js/scripts.js',
