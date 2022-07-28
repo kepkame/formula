@@ -338,6 +338,7 @@
             background-position: top left;
             background-repeat: no-repeat;
             transform: rotate(18.4deg);
+            z-index: -1;
         }
     }
 
@@ -396,6 +397,11 @@
 }
 
 @media (min-width: 1920px) {
+    .promo:after {
+        right: 20%;
+        transform: translateX(50%) rotate(18.4deg);
+    }
+
     .offer__row--image {
         top: 50%;
         width: 100%;
