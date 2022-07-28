@@ -5,6 +5,10 @@
     border-radius: 15px;
 }
 
+.map img {
+    max-width: 100%;
+}
+
 @media (min-width: 850px) {
     .map,
     .map img {

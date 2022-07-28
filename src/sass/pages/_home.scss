@@ -21,11 +21,9 @@
     margin-bottom: 80px;
 }
 
-.promo__picture {
-
-    img {
-        display: block;
-    }
+.promo__picture img {
+    display: block;
+    width: 100%;
 }
 
 // Section – About
@@ -102,12 +100,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
     height: 100%;
-}
 
-.offer__picture {
-
+    img {    
+        width: auto;
+        height: 100%;
+    }
 }
 
 // Section – Merit
@@ -127,10 +125,6 @@
     &.title-line {
         margin-bottom: 62px;
     }
-}
-
-.merit__wrapper {
-
 }
 
 .merit__list {
@@ -170,14 +164,22 @@
     }
 }
 
-@media (min-width: 391px) {
-    .offer {
-
+@media (min-width: 320px) {
+    .offer__row--image {
+        width: auto;
+        height: 100%;
     }
+}
 
+@media (min-width: 391px) {
     .offer__row--image img {
         max-width: none;
         height: 100%;
+    }
+
+    .offer__row--image {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -393,5 +395,16 @@
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1920px) {
+    .offer__row--image {
+        top: 50%;
+        width: 100%;
+        height: auto;
+        transform: translate(-50%, -50%);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }

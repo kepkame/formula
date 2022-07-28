@@ -49,10 +49,6 @@ textarea {
     max-width: 100%;
 }
 
-.form {
-
-}
-
 .form__row {
     margin-bottom: 20px;
 
@@ -73,15 +69,10 @@ textarea {
     max-height: 200px;
 }
 
-
-
-.form--feedback {
-    
-    label {
-        display: block;
-        margin-bottom: 7px;
-        margin-left: 10px;
-    }
+.form--feedback label {
+    display: block;
+    margin-bottom: 7px;
+    margin-left: 10px;
 }
 
 .form__acceptance label {
