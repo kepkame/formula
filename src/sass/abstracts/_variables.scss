@@ -2,13 +2,15 @@
 
 // Primary
 $color-primary: #207ff1;
-$color-primary-hover: mix(#207ff1, #000000, 75);
-// $color-secondary: ;
+$color-primary-hover: mix(#207ff1, #000000, 75); // #185fb5
+
+// Background
 $color-bg: #f1f6fc;
+$color-bg-light: #f7fafd;
 
 // Text
 $color-text: #2b2b2b;
-$color-text-light: mix($color-text, #ffffff, 64.5);
+$color-text-light: mix($color-text, #ffffff, 64.5); // #767676
 $color-title: #000000;
 
 // Status

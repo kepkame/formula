@@ -1,1 +1,438 @@
 // Home
+
+// Section – Promo
+.promo {
+    padding-top: 40px;
+}
+
+.promo__wrapper {
+
+}
+
+.promo__row {
+
+}
+
+.promo__row--text {
+
+}
+
+.promo__inner {
+    
+}
+
+.promo__title {
+    max-width: 310px;
+    margin-top: 0;
+}
+
+.promo__text {
+    margin-bottom: 40px;
+}
+
+.promo__button {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.35px;
+    margin-bottom: 80px;
+}
+
+.promo__picture {
+
+    img {
+        display: block;
+    }
+}
+
+// Section – About
+.about {
+    background-color: $color-bg;
+    padding-top: 41px;
+    padding-bottom: 40px;
+}
+
+.about__wrapper {
+
+}
+
+.about__row {
+
+}
+
+.about__row--header {
+
+}
+
+.about__header-col {
+
+}
+
+.about__header-col--title {
+
+}
+
+.about__title {
+    margin-top: 0;
+}
+
+.about__header-col--desc {
+    margin-bottom: 50px;
+}
+
+.about__desc:first-child {
+    margin-top: 0;
+}
+
+.about__row--cards {
+    
+}
+
+// Section – Offer
+.offer {
+    position: relative;
+    background-color: #384b5c;
+    padding-top: 61px;
+    padding-bottom: 22px;
+    overflow: hidden;
+}
+
+.offer__wrapper {
+
+}
+
+.offer__row {
+
+}
+
+.offer__row--text {
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.offer__container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.offer__inner {
+    max-width: 350px;
+}
+
+.offer__title {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 29px;
+}
+
+.offer__description {
+    color: rgba(#ffffff, 0.7);
+    margin-bottom: 114px;
+    opacity: 0.9;
+}
+
+.offer__form {
+
+
+    .offer__input {
+        width: 100%;
+        margin-bottom: 10px;
+        border: none;
+        padding-bottom: 17px;
+    }
+    
+    .offer__submit {
+        width: 100%;
+    }
+}
+
+.offer__row--image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+}
+
+.offer__picture {
+
+}
+
+// Section – Merit
+.merit {
+    background-color: $color-bg;
+    padding-top: 79px;
+    padding-bottom: 40px;
+}
+
+.merit__header {
+
+}
+
+.metir__title {
+    margin-top: 0;
+
+    &.title-line {
+        margin-bottom: 62px;
+    }
+}
+
+.merit__wrapper {
+
+}
+
+.merit__list {
+
+
+    .cards__item {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .cards__inner {
+        display: block; 
+        text-decoration: none;   
+        border-radius: 30px;
+        padding: 20px;
+        box-shadow: 0px 4px 30px rgba(#000000, 0);
+        box-sizing: border-box;
+        transition: box-shadow 0.3s ease;
+
+        &:focus,
+        &:hover {
+            box-shadow: 0px 4px 30px rgba(#000000, 0.15);
+
+            .cards__link-more {
+                color: #ffffff;
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    .cards__link-more {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 391px) {
+    .offer {
+
+    }
+
+    .offer__row--image img {
+        max-width: none;
+        height: 100%;
+    }
+}
+
+@media (min-width: 680px) {
+    .about__row--cards .cards.cards--advantages,
+    .merit__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .cards__item {
+            flex-basis: 48%;
+            margin-right: 4%;
+            margin-top: 30px;
+
+            &:first-child,
+            &:nth-child(2) {
+                margin-top: 0;
+            }
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 850px) {
+    .promo {
+        padding-top: 120px;
+    }
+
+    .promo__title {
+        max-width: 690px;
+        margin-bottom: 30px;
+    }
+
+    .promo__text {
+        max-width: 450px;
+        font-size: 16px;
+        line-height: 29px;
+        margin-bottom: 50px;
+    }
+
+    .promo__button {
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        line-height: 19px;
+        margin-bottom: 116px;
+    }
+
+    .about {
+        padding-top: 120px;
+        padding-bottom: 127px;
+    }
+
+    .about__row--header {
+        margin-bottom: 40px;
+    }
+
+    .about__title {
+        max-width: 550px;
+        font-size: 38px;
+        line-height: 53px;
+    
+        &:after {
+            bottom: -33px;
+        }
+    }
+    
+    .about__text {
+        max-width: 525px;
+        margin-top: 10px;
+    }
+
+    .offer {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .offer__container {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .offer__inner {
+        max-width: 378px;
+    }
+
+    .offer__title {
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 45px;
+        margin-bottom: 27px;
+    }
+
+    .offer__description {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 100px;
+    }
+
+    .offer__form {
+        max-width: 345px;
+    }
+
+    .merit {
+        padding-top: 121px;
+        padding-bottom: 114px;
+    }
+
+    .metir__title.title-line {
+        margin-bottom: 73px;
+    }
+
+    .merit__list {
+
+        .cards__item {
+            padding: 0;
+        }
+        
+        .cards__inner {
+            padding: 30px;
+        }
+            
+        .cards__title {
+            margin-bottom: 20px;
+        }
+
+        .cards__description {
+            max-width: 368px;
+            margin-bottom: 43px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .promo {
+        padding-top: 120px;
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 84px;
+            right: -138px;
+            width: 667px;
+            height: 472px;
+            background-image: url('../img/foliage.png');
+            background-size: 100%;
+            background-position: top left;
+            background-repeat: no-repeat;
+            transform: rotate(18.4deg);
+        }
+    }
+
+    .about__row--header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .about__header-col {
+        flex-basis: 49%;
+
+        & + & {
+            margin-left: 1%;
+        }
+    }
+
+    .about__row--cards .cards.cards--advantages .cards__item {
+        flex-basis: 23.41%;
+        margin-right: 2.12%;
+        margin-top: 0;
+
+        &:nth-child(2n) {
+            margin-right: 2.12%;
+        }
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(n + 5) {
+            margin-top: 30px;
+        }
+    }
+
+    .merit__list .cards__item {
+        flex-basis: 31.9%;
+        margin-right: 2.15%;
+        margin-top: 0;
+
+        &:nth-child(2n) {
+            margin-right: 2.15%;
+        }
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(n+4) {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+}

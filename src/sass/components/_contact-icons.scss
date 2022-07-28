@@ -1,0 +1,83 @@
+// Contact icons
+
+.contact-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+.contact-icons__item {
+    float: left;
+
+    & + & {
+        margin-left: 15px;
+    }
+}
+
+.contact-icons__link {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        transform: translate(-50%, -50%);
+    }
+
+    path {
+        transition: fill 0.2s ease, stroke 0.2s ease;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: $color-primary-hover;
+
+        path {
+            fill: #ffffff;
+        }
+    }
+
+    &--whatsapp {
+        
+    }
+
+    &--phone {
+
+        svg {
+            width: 17px;
+            height: 19px;
+        }
+    }
+
+    &--email {
+
+        svg {
+            width: 22px;
+            height: 17px;
+        }
+
+        &:focus path,
+        &:hover path {
+            fill: $color-primary-hover;
+            stroke: #ffffff;
+        }
+    }
+}
+
+

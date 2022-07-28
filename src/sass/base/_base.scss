@@ -16,6 +16,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 26px;
     line-height: 31px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 h2 {
@@ -30,25 +32,11 @@ h3 {
     font-weight: 500;
 }
 
-h4 {
-    // font-size: ;
-    // line-height: ;
-}
-
-h5 {
-    // font-size: ;
-    // line-height: ;
-}
-
-h6 {
-    // font-size: ;
-    // line-height: ;
-}
-
 p {
     font-size: 14px;
     line-height: 22px;
     margin: 8px 0;
+    color: $color-text;
 }
 
 b {
@@ -64,13 +52,21 @@ a {
 
     &:focus,
     &:hover {
-        text-decoration: underline;
+        color: $color-primary-hover;
         // color: $color-primary-hover;
     }
 }
 
 img {
     max-width: 100%;
+}
+
+body.fixed {
+    position: fixed;
+    top: 0;
+    margin-left: -100%;
+    padding-left: 100%;
+    overflow: hidden;
 }
 
 .container {
@@ -80,12 +76,13 @@ img {
 
 .title-line {
     position: relative;
-    margin-bottom: 63px;
+    // margin-bottom: 63px;
+    margin-bottom: 52px;
 
     &:after {
         content: "";
         position: absolute;
-        bottom: -20px;
+        bottom: -22px;
         left: 0;
         width: 105px;
         height: 3px;
@@ -106,6 +103,25 @@ img {
     overflow: hidden;
 }
 
+// scrollbar
+::-webkit-scrollbar {
+    height: 7px;
+    width: 0px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background: 0 0;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: $color-text-light;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: $color-text-light;
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 850px) {
     h1, h2, h3, h4, h5, h6 {
         // margin-top: ;
@@ -113,46 +129,40 @@ img {
     }
 
     h1 {
-        // font-size: ;
-        // line-height: ;
+        font-size: 60px;
+        line-height: 72px;
     }
     
     h2 {
-        // font-size: ;
-        // line-height: ;
+        font-size: 32px;
+        line-height: 53px;
     }
     
     h3 {
-        // font-size: ;
-        // line-height: ;
-    }
-    
-    h4 {
-        // font-size: ;
-        // line-height: ;
-    }
-    
-    h5 {
-        // font-size: ;
-        // line-height: ;
-    }
-
-    h6 {
-        // font-size: ;
-        // line-height: ;
+        font-size: 23px;
+        line-height: 30px;
     }
 
     p {
         font-size: 18px;
         line-height: 29px;
     }
+    
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .title-line {
+        margin-bottom: 63px;
+    
+        &:after {
+            bottom: -22px;
+        }
+    }
 }
 
 @media (min-width: 850px) {
-    .container {
-        max-width: 1420px;
-        margin: 0 auto;
-        padding: 0 15px;
-        box-sizing: border-box;
-    }
 }

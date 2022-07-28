@@ -1,10 +1,10 @@
  // Header site
 
 .site-header {
-    background-color: $color-bg;
+    background-color: $color-bg-light;
     border-radius: 0 0 30px 30px;
     padding-top: 22px;
-    margin-bottom: 22px;
+    padding-bottom: 22px;
 }
 
 .site-header__wrapper {
@@ -56,7 +56,7 @@
     float: right;
     position: relative;
     width: 36px;
-    height: 36px;
+    height: 32px;
     background-color: transparent;
     border: none;
     border-radius: 30px;
@@ -74,7 +74,7 @@
     }
     
     &:before {
-        top: calc(50% - 4px);
+        top: calc(50% - 6px);
         width: 100%;
     }
 
@@ -91,26 +91,64 @@
 }
 
 .site-header__col--menu {
+    display: none;
+}
 
+.site-header__col--menu-show {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -425px;
+    width: 100%;
+    max-width: 425px;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 999;
+    transition: right 0.5s ease;
+}
+
+.site-header__col--menu-open {
+    right: 0;
 }
 
 .site-header__menu {
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .site-nav__menu-header {
+    padding: 27px 20px 26px;
+    border-bottom: 1px solid #eeeeee;
+    box-sizing: border-box;
 
+    h3 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 26px;
+        margin: 0;
+    }
 }
 
 .site-header__nav {
-
+    padding: 50px 20px;
+    box-sizing: border-box;
 }
 
 .site-menu__contacts {
-
+    margin-top: auto;
+    padding: 20px;
+    padding-top: 0;
+    box-sizing: border-box;
 }
 
 .site-menu__phone {
+    display: none;
 
     svg {
 
@@ -121,38 +159,162 @@
     }
 }
 
-.site-menu__btn {
-
-}
-
 .site-menu__btn-mobile {
-
+    width: 100%;
 }
 
-.site-menu__btn-desctop {
-
+.site-menu__btn-desktop {
+    display: none;
 }
 
 .site-menu__close {
-
+    position: absolute;
+    top: 27px;
+    right: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 @media (min-width: 850px) {
+    .site-header {
+        padding: 24px 0 25px;
+    }
+
+    .site-header__burger-menu,
+    .site-nav__menu-header,
+    .site-menu__btn-mobile,
+    .site-menu__close {
+        display: none;
+    }
+
+    .site-header__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
     
+    .site-header__col--menu {
+        display: block;
+    }
+
+    .site-header__col--menu {
+        margin-left: auto;
+    }
+
+    .site-header__menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .site-header__nav {
+        padding: 0;
+    }
+
+    .site-menu__contacts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .site-menu__phone {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 17px;
+            height: 19px;
+            transform: translate(-50%, -50%);
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    .site-menu__btn-desktop {
+        display: inline-block;
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 18px;
+        margin-left: 15px;
+        padding: 10px 17px;
+        border-radius: 12px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .site-header__logo {
+        font-size: 20px;
+        line-height: 24px;
+
+        svg {
+            width: 53px;
+            height: 47px;
+        }
+
+        span {
+            margin-left: 16px;
+        }
+    }
+
+    .site-menu__phone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+}
+
+
+
+@media (min-width: 1280px) {
+    .site-menu__contacts {
+        margin-left: 37px;
+    }
+
+    .site-menu__phone {
+        width: auto;
+        height: auto;
+        padding-left: 30px;
+
+        svg {
+            left: 0;
+            transform: translate(0, -50%);
+        }
+
+        span {
+            display: inline;
+        }
+    }
+
+    .site-menu__btn-desktop {
+        margin-left: 37px;
+    }
+}
+
+
+
+@media (min-width: 1340px) {
+    .site-menu__contacts {
+        margin-left: 143px;
+    }
 }

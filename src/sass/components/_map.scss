@@ -1,2 +1,13 @@
 // Map
 
+.map,
+.map img {
+    border-radius: 15px;
+}
+
+@media (min-width: 850px) {
+    .map,
+    .map img {
+        border-radius: 30px;
+    }
+}

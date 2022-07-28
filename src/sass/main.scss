@@ -10,9 +10,13 @@
 @import 'base/base'; // Other global styles (h1, ul, visually-hidden, etc.)
 
 // Small components
+@import 'components/b-contacts'; // Block contact information
 @import 'components/buttons';
+@import 'components/banners';
 @import 'components/cards';
+@import 'components/contact-icons';
 @import 'components/forms';
+@import 'components/map';
 @import 'components/popups';
 
 // Styles involved in creating a site layout
@@ -21,3 +25,6 @@
 @import 'layout/navigation'; // Navigation site
 
 @import 'pages/home'; // Specific styles page Home
+
+// Specific styles rowser IE9
+@import 'ie9/header';
