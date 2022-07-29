@@ -33,6 +33,7 @@ gulp.task('sass', function () {
 const jsFiles = [
   './src/js/jquery.min.js',
   './src/js/jquery.maskedinput.min.js',
+  './src/js/aos.min.js',
   './src/js/menu.js',
   './src/js/popups.js',
   './src/js/scripts.js',
@@ -40,9 +41,6 @@ const jsFiles = [
 
 function scripts() {
 	return gulp.src(jsFiles)
-    .pipe(babel({
-      presets: ["@babel/preset-env"]
-    }))
     .pipe(concat('common.js'))
 		.pipe(uglify({
 		  toplevel: true

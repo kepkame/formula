@@ -90,6 +90,10 @@
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
+    &:focus {
+        outline: none;
+    }
+
     &:focus,
     &:hover {
 
@@ -112,8 +116,8 @@
     .btn-call {
         display: block;
         position: fixed;
-        bottom: 30px;
-        right: 30px;
+        bottom: 20px;
+        right: 20px;
         width: 60px;
         height: 60px;
         background-color: $color-primary;
@@ -121,8 +125,7 @@
         border-radius: 50%;
         transition: background-color 0.3s ease;
         opacity: 0;
-        animation: fadeIn 0.5s forwards;
-        animation-delay: 1s;
+        animation: fadeUp 0.5s forwards;
         cursor: pointer;
         z-index: 99;
 

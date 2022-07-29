@@ -2,21 +2,51 @@
 
 @keyframes waving-hand {
     0% { transform: rotate(0deg); }
-    60% { transform: rotate(0deg); }
-    64% { transform: rotate(15deg); }
-    72% { transform: rotate(-15deg); }
-    76% { transform: rotate(0deg); }
+    78% { transform: rotate(0deg); }
+    82% { transform: rotate(15deg); }
+    89% { transform: rotate(-15deg); }
+    96% { transform: rotate(15deg); }
    100% { transform: rotate(0deg); }
 }
 
-@keyframes fadeIn {
+@keyframes fadeUp {
     0% {
         opacity: 0;
-        transform: scale3d(0.98, 0.98, 0.98);
+        transform: translateY(120px) scale3d(0.98, 0.98, 0.98);
     }
 
     100% {
         opacity: 1;
-        transform: scale3d(1, 1, 1);
+        transform: translateY(0) scale3d(1, 1, 1);
+    }
+}
+
+@keyframes anim-open {
+	0% { 
+        opacity: 0;
+        transform: translate3d(calc(-100vw - 50%), 0, 0) scale3d(0.95, 0.95, 1);
+    }
+	60% { 
+        opacity: 1;
+        transform: translate3d(calc(-50% + 80px), 0, 0);
+    }
+	100% { 
+        opacity: 1;
+        transform: translate3d(calc(-50%), 0, 0);
+    }
+}
+
+@keyframes anim-close {
+	0% { 
+        opacity: 1;
+        transform: translate3d(calc(-50%), 0, 0);
+    }
+	40% { 
+        opacity: 1;
+        transform: translate3d(calc(-50% - 80px), 0, 0) scale3d(1.05, 1.05, 1);
+    }
+	100% { 
+        opacity: 0;
+        transform: translate3d(calc(100vw + 50%), 0, 0);
     }
 }

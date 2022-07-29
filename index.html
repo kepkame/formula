@@ -5,26 +5,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>АН “Отдел продаж” - 15 лет на рынке Сочи</title>
 	<meta name="description" content="Более 15 лет наши специалисты в области недвижимости и права помогают покупать квартиры максимально безопасно и дешево.">
+    <meta name="robots" content="noindex, nofollow">
 	
-	<link rel="apple-touch-icon" sizes="180x180" href="/formula/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/formula/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/formula/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/formula/favicons/site.webmanifest">
-	<link rel="mask-icon" href="/formula/favicons/safari-pinned-tab.svg" color="#207ff1">
-	<link rel="shortcut icon" href="/formula/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#207ff1">
+	<link rel="shortcut icon" href="favicons/favicon.ico">
 	<meta name="msapplication-TileColor" content="#207ff1">
-	<meta name="msapplication-config" content="/formula/favicons/browserconfig.xml">
+	<meta name="msapplication-config" content="favicons/browserconfig.xml">
 	<meta name="theme-color" content="#207ff1">
+
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="АН “Отдел продаж” - 15 лет на рынке Сочи">
+    <meta property="og:description" content="Более 15 лет наши специалисты в области недвижимости и права помогают покупать квартиры максимально безопасно и дешево.">
+    <meta property="og:url" content="https://kepkame.github.io/formula/">
+    <meta property="og:site_name" content="АН “Отдел продаж”">
+    <meta property="article:modified_time" content="2022-07-29T23:03:17+03:00">
+    <meta property="og:image" content="build/img/Open-Graph.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="АН “Отдел продаж” - 15 лет на рынке Сочи">
+    <meta name="twitter:description" content="Более 15 лет наши специалисты в области недвижимости и права помогают покупать квартиры максимально безопасно и дешево.">
+    <meta name="twitter:image" content="build/img/Open-Graph.jpg" />
 	
-	<link rel="stylesheet" href="/formula/build/css/main.css">
-	<!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="style.css">
-	<![endif]-->
+	<link rel="stylesheet" href="build/css/main.css">
 </head>
 <body class="no-js">
 
-	<div class="site-header" role="banner">
+	<header class="site-header" role="banner">
 		<div class="container">
 			<div class="site-header__wrapper">
 				<div class="site-header__col site-header__col--logo">
@@ -47,7 +59,7 @@
 							<h3>Меню</h3>
 						</div>
 
-						<div class="site-header__nav site-nav" role="navigation">
+						<nav class="site-header__nav site-nav" role="navigation">
 							<ul class="site-nav__list">
 								<li class="site-nav__item">
 									<a href="#" class="site-nav__link">Каталог объектов</a>
@@ -65,7 +77,7 @@
 									<a href="#" class="site-nav__link">Контакты</a>
 								</li>
 							</ul>
-						</div>
+						</nav>
 
 						<div class="site-menu__contacts">
 							<a class="site-menu__phone" href="tel:+74956599988">
@@ -75,7 +87,7 @@
 								<span>+7 (495) 659-99-88</span>
 							</a>
 
-							<button class="site-menu__btn-mobile btn" type="button">Оставить заявку</button>
+							<button class="site-menu__btn-mobile btn btn-feedback" type="button">Оставить заявку</button>
 
 							<button class="site-menu__btn-desktop btn btn--outline btn-feedback" type="button">Заказать звонок</button>
 						</div>
@@ -87,12 +99,12 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 
-	<div class="site-main" role="main">
-		<div id="promo" class="promo" role="region">
+	<main class="site-main" role="main">
+		<section id="promo" class="promo" role="region">
 			<div class="promo__wrapper">
-				<div class="promo__row promo__row--text">
+				<div class="promo__row promo__row--text" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="600">
 					<div class="container">
 						<div class="promo__inner">
 							<h1 class="promo__title">Искусство обращения с недвижимостью</h1>
@@ -104,55 +116,63 @@
 
 				<div class="promo__row promo__row--image">
 					<picture class="promo__picture">
-						<source srcset="/formula/build/img/bg-house.jpg" media="(max-width: 390px)">
-						<img src="/formula/build/img/large/bg-house.jpg" alt="Квартиры в Сочи с видом на море">
+						<source srcset="build/img/bg-house.jpg" media="(max-width: 390px)">
+						<img src="build/img/large/bg-house.jpg" alt="Квартиры в Сочи с видом на море" width="1920" height="750">
 					</picture>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div id="o-nas" class="about" role="region">
+		<section class="about" role="region">
 			<div class="container">
 				<div class="about__wrapper">
 					<div class="about__row about__row--header">
-						<div class="about__header-col about__header-col--title">
+						<div class="about__header-col about__header-col--title" data-aos="fade-up" data-aos-duration="800">
 							<h2 class="about__title title-line">АН “Отдел продаж” - 15 лет на рынке Сочи</h2>
 						</div>
-						<div class="about__header-col about__header-col--desc">
+						<div class="about__header-col about__header-col--desc" data-aos="fade-up" data-aos-duration="800">
 							<p class="about__text">Более 15 лет наши специалисты в области недвижимости и права помогают покупать квартиры максимально безопасно и дешево</p>
 						</div>
 					</div>
 					
 					<div class="about__row about__row--cards">
 						<ul class="cards cards--advantages">
-							<li class="cards__item">
-								<h3 class="cards__title"><span>16</span> домов</h3>
-								<p class="cards__description">Полностью заселены всеми довольными клиентами</p>
+							<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+								<article>
+									<h3 class="cards__title"><span>16</span> домов</h3>
+									<p class="cards__description">Полностью заселены всеми довольными клиентами</p>
+								</article>
 							</li>
 							
-							<li class="cards__item">
-								<h3 class="cards__title"><span>3000</span> клиентов</h3>
-								<p class="cards__description">Уже обратились к нам и поселились в своих квартирах</p>
+							<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+								<article>
+									<h3 class="cards__title"><span>3000</span> клиентов</h3>
+									<p class="cards__description">Уже обратились к нам и поселились в своих квартирах</p>
+								</article>
 							</li>
 							
-							<li class="cards__item">
-								<h3 class="cards__title"><span>2000</span> человек</h3>
-								<p class="cards__description">Переедут в Сочи благодаря нашим услугам и так далее</p>
+							<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+								<article>
+									<h3 class="cards__title"><span>2000</span> человек</h3>
+									<p class="cards__description">Переедут в Сочи благодаря нашим услугам и так далее</p>
+								</article>
 							</li>
 							
-							<li class="cards__item">
-								<h3 class="cards__title"><span>350+</span> сделок</h3>
-								<p class="cards__description">Каждый день по всему Сочи</p>
+							<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+								<article>
+									<h3 class="cards__title"><span>350+</span> сделок</h3>
+									<p class="cards__description">Каждый день по всему Сочи</p>
+								</article>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div id="predlogeniye" class="offer" role="region">
+		<section class="offer" role="region">
 			<div class="offer__wrapper">
-				<div class="offer__row offer__row--text">
+				<div class="offer__row offer__row--text" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="600">
 					<div class="offer__container">
 						<div class="offer__inner">
 							<h2 class="offer__title">Получите выгодное предложение!</h2>
@@ -167,157 +187,164 @@
 				</div>
 				<div class="offer__row offer__row--image">
 					<picture class="offer__picture">
-						<source srcset="/formula/build/img/bg-room.jpg" media="(max-width: 390px)">
-						<img src="/formula/build/img/large/bg-room.jpg" alt="Минималистичный интерьер комнаты">
+						<source srcset="build/img/bg-room.jpg" media="(max-width: 390px)">
+						<img src="build/img/large/bg-room.jpg" alt="Минималистичный интерьер комнаты" width="1920" height="673">
 					</picture>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div id="zaslugi" class="merit" role="region">
+		<section class="merit" role="region">
 			<div class="container">
-				<div class="merit__header">
+				<div class="merit__header" data-aos="fade-up" data-aos-duration="800">
 					<h2 class="metir__title title-line">Наши заслуги</h2>
 				</div>
 				<div class="merit__wrapper">
 					<ul class="merit__list cards">
-						<li class="cards__item">
-							<a href="#" class="cards__inner">
-								<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
-								<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
-								<div class="cards__footer">
-									<div class="cards__date">
-										<span class="cards__time">24.05.2022</span>
+						<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+							<article>
+								<a href="#" class="cards__inner">
+									<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
+									<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
+									<div class="cards__footer">
+										<div class="cards__date">
+											<span class="cards__time">24.05.2022</span>
+										</div>
+										<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
 									</div>
-									<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
-								</div>
-							</a>
+								</a>
+							</article>
 						</li>
 						
-						<li class="cards__item">
-							<a href="#" class="cards__inner">
-								<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
-								<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
-								<div class="cards__footer">
-									<div class="cards__date">
-										<span class="cards__time">24.05.2022</span>
+						<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+							<article>
+								<a href="#" class="cards__inner">
+									<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
+									<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
+									<div class="cards__footer">
+										<div class="cards__date">
+											<span class="cards__time">24.05.2022</span>
+										</div>
+										<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
 									</div>
-									<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
-								</div>
-							</a>
+								</a>
+							</article>
 						</li>
 						
-						<li class="cards__item">
-							<a href="#" class="cards__inner">
-								<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
-								<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
-								<div class="cards__footer">
-									<div class="cards__date">
-										<span class="cards__time">24.05.2022</span>
+						<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+							<article>
+								<a href="#" class="cards__inner">
+									<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
+									<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
+									<div class="cards__footer">
+										<div class="cards__date">
+											<span class="cards__time">24.05.2022</span>
+										</div>
+										<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
 									</div>
-									<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
-								</div>
-							</a>
+								</a>
+							</article>
 						</li>
 						
-						<li class="cards__item">
-							<a href="#" class="cards__inner">
-								<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
-								<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
-								<div class="cards__footer">
-									<div class="cards__date">
-										<span class="cards__time">24.05.2022</span>
+						<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+							<article>
+								<a href="#" class="cards__inner">
+									<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
+									<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
+									<div class="cards__footer">
+										<div class="cards__date">
+											<span class="cards__time">24.05.2022</span>
+										</div>
+										<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
 									</div>
-									<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
-								</div>
-							</a>
+								</a>
+							</article>
 						</li>
 						
-						<li class="cards__item">
-							<a href="#" class="cards__inner">
-								<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
-								<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
-								<div class="cards__footer">
-									<div class="cards__date">
-										<span class="cards__time">24.05.2022</span>
+						<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+							<article>
+								<a href="#" class="cards__inner">
+									<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
+									<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
+									<div class="cards__footer">
+										<div class="cards__date">
+											<span class="cards__time">24.05.2022</span>
+										</div>
+										<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
 									</div>
-									<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
-								</div>
-							</a>
+								</a>
+							</article>
 						</li>
 						
-						<li class="cards__item">
-							<a href="#" class="cards__inner">
-								<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
-								<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
-								<div class="cards__footer">
-									<div class="cards__date">
-										<span class="cards__time">24.05.2022</span>
+						<li class="cards__item" data-aos="fade-up" data-aos-duration="800">
+							<article>
+								<a href="#" class="cards__inner">
+									<h3 class="cards__title">Выгодная ставка от 6,5% на покупку коммерческой недвижимости</h3>
+									<p class="cards__description">Мы запустили программу субсидированной ипотеки для Сочинских предпринимателей малого и среднего бизнеса.</p>
+									<div class="cards__footer">
+										<div class="cards__date">
+											<span class="cards__time">24.05.2022</span>
+										</div>
+										<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
 									</div>
-									<span class="cards__link-more btn btn--small btn--light">Подробнее</span>
-								</div>
-							</a>
+								</a>
+							</article>
 						</li>
 					</ul>
 				</div>
 			</div>
-		</div>
-	</div>
+		</section>
+	</main>
 
-	<div id="contacty" class="site-footer" role="contentinfo">
+	<footer id="contacty" class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="site-footer__wrapper">
-				<div class="site-footer__col site-footer__col--text">
-					<div class="site-footer__inner">
-						<h2 class="site-footer__title title-line">Контакты</h2>
-						<div class="b-contacts">
-							<a href="tel:+74956599988" class="b-contacts__phone">+7 (495) 659-99-88</a>
-							<p class="b-contacts__address">г. Сочи, <br>ул. Конституции СССР 4, <br>2 этаж, офис 224</p>
-							<button class="b-contacts__btn btn btn-feedback">Обратный звонок</button>
-				
-							<ul class="site-footer__icons contact-icons">
-								<li class="contact-icons__item">
-									<a href="https://wa.me/+79104669525" class="contact-icons__link contact-icons__link--whatsapp" title="WhatsApp">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 962.63 962.79" width="20" height="20">
-											<path d="M0 962.79c4.31-12.9 8.3-25 12.39-37q35.78-105.46 71.47-210.94a9.83 9.83 0 0 0-.89-7.23 465.28 465.28 0 0 1-62-295.86c11.22-88.91 44.95-168.36 101.7-237.51C192.81 88.86 282.28 34.34 390.35 10.67A457.91 457.91 0 0 1 518.43 1c101.49 6.53 192.04 41.42 271.14 105.5a464.52 464.52 0 0 1 127.41 161.31 458.73 458.73 0 0 1 41.38 138.41 466.86 466.86 0 0 1 2.66 101.69 458.39 458.39 0 0 1-52.53 179.14q-58.07 109-161.93 175.86a467.32 467.32 0 0 1-173.92 67.94 474.81 474.81 0 0 1-120.44 5.71A467.46 467.46 0 0 1 265.99 882a10.41 10.41 0 0 0-8.86-1q-110.14 35.18-220.36 70.11Zm118.92-116.54c2.07-.52 3.19-.73 4.27-1.08q71.73-22.71 143.45-45.57c3.63-1.16 6.16-.54 9.22 1.29 10.7 6.4 21.31 13 32.41 18.65 80.84 40.93 166.12 53.47 255 36.89 93.75-17.47 172.15-63 232.7-136.65 77.74-94.52 106.1-203.16 84.09-323.67-17-93.28-63.61-170.34-136.9-230.16C653.81 93 550.92 64.43 436.4 78.67a379.7 379.7 0 0 0-135.78 44.07c-71.41 38.91-126.4 94.26-163.91 166.47-40.57 78.11-52.79 160.91-38.14 247.49 9.89 58.45 32.77 111.76 67.31 160 1.85 2.58 2.25 4.69 1.21 7.69-8.22 23.87-16.29 47.79-24.39 71.7-7.84 23.1-15.66 46.21-23.78 70.16Z" fill="#207FF1"/><path d="M344.65 256c3.16 0 6.37.34 9.48-.06 10.76-1.39 17.6 3.92 21.86 13 4.67 9.91 8.83 20.06 13.1 30.16 8.85 21 17.53 42 26.48 62.91 3 7.07 2.83 13.56-.45 20.6-6.75 14.49-17.58 25.81-28.14 37.29-9.7 10.55-10.54 14.86-3 27.22 29 47.68 66.44 86.92 115.7 113.93 14.1 7.73 28.93 14.16 43.62 20.77 9.09 4.08 15 2.68 21.33-4.93q18.84-22.62 37.12-45.71c5.6-7.06 11.1-9.85 19.57-6.54 14.52 5.67 28.8 12 42.93 18.59 18.22 8.52 36.05 17.86 54.3 26.3 8.74 4 12.32 10 11.89 19.57a135.78 135.78 0 0 1-9.16 44.2c-5 12.72-14.93 21.53-25.57 29.36-15 11-31 20-49.58 23.57-6.35 1.24-12.7 2.53-19.09 3.55-16.26 2.62-31.78-1.51-47.12-5.93-34-9.81-67.45-21.41-99.39-36.86-33.09-16-62.21-37.8-89.09-62.63-41.52-38.36-75.62-82.86-104.87-131.02-12.93-21.28-22.13-44.32-25.54-69.22-5.7-41.72 5.13-78.34 34.06-109.4 7.74-8.31 15.63-16.31 27.2-18.29 7.3-1.26 14.87-.88 22.33-1.24Z" fill="#207FF1"/>
-										</svg>
-										<span class="visually-hidden">WhatsApp</span>
-									</a>
-								</li>
+				<div class="site-footer__col site-footer__col--text" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="600">
+					
+					<h2 class="site-footer__title title-line">Контакты</h2>
+					<div class="b-contacts">
+						<a href="tel:+74956599988" class="b-contacts__phone">+7 (495) 659-99-88</a>
+						<p class="b-contacts__address">г. Сочи, <br>ул. Конституции СССР 4, <br>2 этаж, офис 224</p>
+						<button class="b-contacts__btn btn btn-feedback">Обратный звонок</button>
+			
+						<ul class="site-footer__icons contact-icons">
+							<li class="contact-icons__item">
+								<a href="https://wa.me/+79104669525" class="contact-icons__link contact-icons__link--whatsapp" title="WhatsApp">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 962.63 962.79" width="20" height="20">
+										<path d="M0 962.79c4.31-12.9 8.3-25 12.39-37q35.78-105.46 71.47-210.94a9.83 9.83 0 0 0-.89-7.23 465.28 465.28 0 0 1-62-295.86c11.22-88.91 44.95-168.36 101.7-237.51C192.81 88.86 282.28 34.34 390.35 10.67A457.91 457.91 0 0 1 518.43 1c101.49 6.53 192.04 41.42 271.14 105.5a464.52 464.52 0 0 1 127.41 161.31 458.73 458.73 0 0 1 41.38 138.41 466.86 466.86 0 0 1 2.66 101.69 458.39 458.39 0 0 1-52.53 179.14q-58.07 109-161.93 175.86a467.32 467.32 0 0 1-173.92 67.94 474.81 474.81 0 0 1-120.44 5.71A467.46 467.46 0 0 1 265.99 882a10.41 10.41 0 0 0-8.86-1q-110.14 35.18-220.36 70.11Zm118.92-116.54c2.07-.52 3.19-.73 4.27-1.08q71.73-22.71 143.45-45.57c3.63-1.16 6.16-.54 9.22 1.29 10.7 6.4 21.31 13 32.41 18.65 80.84 40.93 166.12 53.47 255 36.89 93.75-17.47 172.15-63 232.7-136.65 77.74-94.52 106.1-203.16 84.09-323.67-17-93.28-63.61-170.34-136.9-230.16C653.81 93 550.92 64.43 436.4 78.67a379.7 379.7 0 0 0-135.78 44.07c-71.41 38.91-126.4 94.26-163.91 166.47-40.57 78.11-52.79 160.91-38.14 247.49 9.89 58.45 32.77 111.76 67.31 160 1.85 2.58 2.25 4.69 1.21 7.69-8.22 23.87-16.29 47.79-24.39 71.7-7.84 23.1-15.66 46.21-23.78 70.16Z" fill="#207FF1"/><path d="M344.65 256c3.16 0 6.37.34 9.48-.06 10.76-1.39 17.6 3.92 21.86 13 4.67 9.91 8.83 20.06 13.1 30.16 8.85 21 17.53 42 26.48 62.91 3 7.07 2.83 13.56-.45 20.6-6.75 14.49-17.58 25.81-28.14 37.29-9.7 10.55-10.54 14.86-3 27.22 29 47.68 66.44 86.92 115.7 113.93 14.1 7.73 28.93 14.16 43.62 20.77 9.09 4.08 15 2.68 21.33-4.93q18.84-22.62 37.12-45.71c5.6-7.06 11.1-9.85 19.57-6.54 14.52 5.67 28.8 12 42.93 18.59 18.22 8.52 36.05 17.86 54.3 26.3 8.74 4 12.32 10 11.89 19.57a135.78 135.78 0 0 1-9.16 44.2c-5 12.72-14.93 21.53-25.57 29.36-15 11-31 20-49.58 23.57-6.35 1.24-12.7 2.53-19.09 3.55-16.26 2.62-31.78-1.51-47.12-5.93-34-9.81-67.45-21.41-99.39-36.86-33.09-16-62.21-37.8-89.09-62.63-41.52-38.36-75.62-82.86-104.87-131.02-12.93-21.28-22.13-44.32-25.54-69.22-5.7-41.72 5.13-78.34 34.06-109.4 7.74-8.31 15.63-16.31 27.2-18.29 7.3-1.26 14.87-.88 22.33-1.24Z" fill="#207FF1"/>
+									</svg>
+									<span class="visually-hidden">WhatsApp</span>
+								</a>
+							</li><!-- 
 
-								<li class="contact-icons__item">
-									<a href="tel:+74956599988" class="contact-icons__link contact-icons__link--phone" title="+7 (495) 659-99-88">
-										<svg viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="19">
-											<path d="M5.41 18.074c.106.14.246.176.422.176.106 0 .211 0 .316-.07l2.286-1.442a.561.561 0 0 0 .28-.492c0-.07 0-.176-.034-.246l-1.16-2.848c-.07-.21-.282-.351-.563-.351h-.035l-1.969.176a9.217 9.217 0 0 1 0-6.293l1.969.175h.035c.281 0 .492-.14.563-.351L8.68 3.66c.035-.07.035-.176.035-.246a.561.561 0 0 0-.281-.492L6.148 1.48a.591.591 0 0 0-.738.106C.84 6.12.84 13.539 5.41 18.074Zm5.274-14.449c-.141-.246-.457-.281-.668-.105l-.211.21a.426.426 0 0 0-.07.528c.07.14.105.316.105.527 0 .176-.035.352-.106.492a.426.426 0 0 0 .07.528l.212.21c.21.176.527.141.668-.105a2.396 2.396 0 0 0 0-2.285Zm3.199-3.2c-.14-.21-.422-.21-.598-.034l-.21.175c-.141.176-.177.422-.036.598a5.584 5.584 0 0 1 0 7.207c-.14.176-.105.422.035.598l.211.176c.176.175.457.175.598-.036a6.665 6.665 0 0 0 0-8.683Zm-1.617 1.583c-.141-.211-.422-.246-.598-.07l-.211.21c-.176.141-.176.387-.07.563a3.327 3.327 0 0 1 0 4.113c-.106.176-.106.422.07.563l.211.21c.176.176.457.141.598-.07 1.3-1.617 1.265-3.902 0-5.52Z" fill="#1672E1"/>
-										</svg>
-										<span class="visually-hidden">+7 (495) 659-99-88</span>
-									</a>
-								</li>
+							--><li class="contact-icons__item">
+								<a href="tel:+74956599988" class="contact-icons__link contact-icons__link--phone" title="+7 (495) 659-99-88">
+									<svg viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="19">
+										<path d="M5.41 18.074c.106.14.246.176.422.176.106 0 .211 0 .316-.07l2.286-1.442a.561.561 0 0 0 .28-.492c0-.07 0-.176-.034-.246l-1.16-2.848c-.07-.21-.282-.351-.563-.351h-.035l-1.969.176a9.217 9.217 0 0 1 0-6.293l1.969.175h.035c.281 0 .492-.14.563-.351L8.68 3.66c.035-.07.035-.176.035-.246a.561.561 0 0 0-.281-.492L6.148 1.48a.591.591 0 0 0-.738.106C.84 6.12.84 13.539 5.41 18.074Zm5.274-14.449c-.141-.246-.457-.281-.668-.105l-.211.21a.426.426 0 0 0-.07.528c.07.14.105.316.105.527 0 .176-.035.352-.106.492a.426.426 0 0 0 .07.528l.212.21c.21.176.527.141.668-.105a2.396 2.396 0 0 0 0-2.285Zm3.199-3.2c-.14-.21-.422-.21-.598-.034l-.21.175c-.141.176-.177.422-.036.598a5.584 5.584 0 0 1 0 7.207c-.14.176-.105.422.035.598l.211.176c.176.175.457.175.598-.036a6.665 6.665 0 0 0 0-8.683Zm-1.617 1.583c-.141-.211-.422-.246-.598-.07l-.211.21c-.176.141-.176.387-.07.563a3.327 3.327 0 0 1 0 4.113c-.106.176-.106.422.07.563l.211.21c.176.176.457.141.598-.07 1.3-1.617 1.265-3.902 0-5.52Z" fill="#1672E1"/>
+									</svg>
+									<span class="visually-hidden">+7 (495) 659-99-88</span>
+								</a>
+							</li><!-- 
 
-								<li class="contact-icons__item">
-									<a href="mailto:info@formularf.ru" class="contact-icons__link contact-icons__link--email" title="mail@formula.ru">
-										<svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 1h20M1 1v14.167a.833.833 0 0 0 .833.833h18.334a.833.833 0 0 0 .833-.833V1M1 1l10 9.167L21 1" stroke="#207FF1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-										<span class="visually-hidden">info@formularf.ru</span>
-									</a>
-								</li>
-							</ul>
-						</div>
+							--><li class="contact-icons__item">
+								<a href="mailto:info@formularf.ru" class="contact-icons__link contact-icons__link--email" title="mail@formula.ru">
+									<svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1h20M1 1v14.167a.833.833 0 0 0 .833.833h18.334a.833.833 0 0 0 .833-.833V1M1 1l10 9.167L21 1" stroke="#207FF1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<span class="visually-hidden">info@formularf.ru</span>
+								</a>
+							</li>
+						</ul>
 					</div>
+						
 				</div>
 
 				<div class="site-footer__col site-footer__col--map">
-					<div id="site-footer-map" class="site-footer__map map">
-						<picture class="map__picture">
-							<source srcset="/formula/build/img/map.jpg" media="(max-width: 390px)">
-							<img src="/formula/build/img/large/map.jpg" alt="Яндекс Карта города Сочи">
-						</picture>
-					</div>
+					<div id="site-footer-map" class="site-footer__map map"></div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
 	
 	<a href="tel:+74956599988" class="btn-call btn-feedback">
 		<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" width="23" height="23">
@@ -344,7 +371,7 @@
 				<div id="popup-feedback-form" class="popup__form form form--feedback" aria-label="Submit the request" role="form">
 					<div class="form__row">
 						<label for="feedback-form-name">Ваше Имя</label>
-						<input id="feedback-form-name" class="form__input" type="tel" name="phone">
+						<input id="feedback-form-name" class="form__input" type="text" name="phone">
 					</div>
 
 					<div class="form__row">
@@ -361,9 +388,7 @@
 						<div class="form__acceptance">
 							<label>
 								<input type="checkbox" name="form-acceptance" require>
-								<span class="form__acceptance-label">
-									<span>Я прочитал и согласен с политикой конфиденциальности</span>
-								</span>
+								<span class="form__acceptance-label">Я прочитал и согласен с политикой конфиденциальности</span>
 							</label>
 						</div>
 						<input class="form__submit btn" type="submit" value="Оставить заявку">
@@ -374,10 +399,10 @@
 					<span class="visually-hidden">Закрыть</span>
 				</button>
 			</div>
-			<div class="popup-feedback__bg popup-feedback__bg--show"></div>
+			<div class="popup__bg"></div>
 		</div>
 	</div>
 
-	<script src="/formula/build/js/common.js"></script>
+	<script src="build/js/common.js"></script>
 </body>
 </html>

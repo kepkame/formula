@@ -5,16 +5,8 @@
     margin-bottom: 37px;
 }
 
-.site-footer__col {
-
-}
-
 .site-footer__col--text {
     margin-bottom: 46px;
-}
-
-.site-footer__inner {
-    max-width: 200px;
 }
 
 .site-footer__title {
@@ -23,12 +15,6 @@
     margin-top: 0;
     opacity: 0.9;
 }
-
-.site-footer__icons {
-    
-}
-
-
 
 @media (min-width: 850px) {
     .site-footer {
@@ -41,7 +27,6 @@
     }
 }
 
-
 @media (min-width: 1024px) {
     .site-footer__wrapper {
         display: flex;
@@ -53,6 +38,7 @@
     .site-footer__col--text {
         flex-basis: 200px;
         max-width: none;
+        margin-bottom: 0;
     }
 
     .site-footer__col--map {

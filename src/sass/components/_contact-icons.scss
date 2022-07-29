@@ -4,16 +4,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    
-    &:after {
-        content: "";
-        clear: both;
-        display: table;
-    }
 }
 
 .contact-icons__item {
-    float: left;
+    display: inline-block;
 
     & + & {
         margin-left: 15px;

@@ -24,6 +24,7 @@
 .promo__picture img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 // Section – About
@@ -50,7 +51,7 @@
     position: relative;
     background-color: #384b5c;
     padding-top: 61px;
-    padding-bottom: 22px;
+    padding-bottom: 64px;
     overflow: hidden;
 }
 
@@ -99,11 +100,13 @@
 .offer__row--image {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     height: 100%;
+    transform: translateX(-50%);
 
     img {    
         width: auto;
+        max-width: none;
         height: 100%;
     }
 }
@@ -115,10 +118,6 @@
     padding-bottom: 40px;
 }
 
-.merit__header {
-
-}
-
 .metir__title {
     margin-top: 0;
 
@@ -128,7 +127,6 @@
 }
 
 .merit__list {
-
 
     .cards__item {
         display: inline-block;
@@ -164,22 +162,11 @@
     }
 }
 
-@media (min-width: 320px) {
-    .offer__row--image {
-        width: auto;
-        height: 100%;
-    }
-}
-
 @media (min-width: 391px) {
     .offer__row--image img {
+        width: auto;
         max-width: none;
         height: 100%;
-    }
-
-    .offer__row--image {
-        left: 50%;
-        transform: translateX(-50%);
     }
 }
 
@@ -390,7 +377,7 @@
             margin-right: 0;
         }
 
-        &:nth-child(n+4) {
+        &:nth-child(n + 4) {
             margin-top: 30px;
         }
     }
@@ -403,10 +390,10 @@
     }
 
     .offer__row--image {
-        top: 50%;
+        top: auto;
+        bottom: 0;
         width: 100%;
         height: auto;
-        transform: translate(-50%, -50%);
 
         img {
             width: 100%;

@@ -1,12 +1,16 @@
 /* jshint browser: true */
 
-
-
-
-
-
 // jQuery
 jQuery(document).ready(function($){
+
+  // Initializing the script animation – AOS JS
+  AOS.init();
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+        $('.banner-stock').addClass('banner-stock--show');
+    }
+  });
 
   // Define the browser
   function isIE() {
@@ -25,23 +29,6 @@ jQuery(document).ready(function($){
   var elemsClassNojs = $('.no-js');
   if (elemsClassNojs[0] !== undefined) {
     elemsClassNojs.removeClass('no-js');
-  }
-
-  // Animation – Banner Waving-hand
-  function wavingHand(banner) {
-    var link = banner.find('.banner-stock__link');
-    link.mouseenter(function() {
-      // навели курсор на объект (не учитываются переходы внутри элемента)
-      banner.addClass('banner-stock--hover');
-    })
-    .mouseleave(function() {
-        // отвели курсор с объекта (не учитываются переходы внутри элемента)
-      banner.removeClass('banner-stock--hover');
-    });
-  }
-
-  if ($('#banner-stock').length) {
-    wavingHand($('#banner-stock'));
   }
 
   // Mask phone

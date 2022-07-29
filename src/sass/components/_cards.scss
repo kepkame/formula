@@ -132,8 +132,16 @@
             line-height: 18px;
         }
     }
-    
-    
 }
 
+@media (min-width: 1024px) {
+    .cards--advantages .cards__title span {
+        display: block;
+    }
+}
 
+@media (min-width: 1340px) {
+    .cards--advantages .cards__title span {
+        display: inline;
+    }
+}

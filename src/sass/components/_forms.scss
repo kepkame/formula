@@ -75,7 +75,77 @@ textarea {
     margin-left: 10px;
 }
 
-.form__acceptance label {
-    margin-left: 0;
-    margin-bottom: 0;
+.form__acceptance {
+    position: relative;
+    max-width: 262px;
+    margin-bottom: 15px;
+
+    input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        bottom: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+
+        &:checked + .form__acceptance-label {
+
+            &:before {
+                background-color: $color-primary;
+            }
+            
+            &:after {
+                content: "";
+                position: absolute;
+                top: 11px;
+                left: 5px;
+                width: 2px;
+                height: 2px;
+                background-color: #ffffff;
+                box-shadow: 2px 0 0 #ffffff, 
+                            4px 0 0 #ffffff, 
+                            4px -2px 0 #ffffff, 
+                            4px -4px 0 #ffffff, 
+                            4px -6px 0 #ffffff, 
+                            4px -8px 0 #ffffff;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    label {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .form__acceptance-label {
+        display: inline-block;
+        position: relative;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left;
+        color: #9F9F9F;
+        padding-left: 29px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 19px;
+            height: 19px;
+            border: 1px solid $color-primary;
+            border-radius: 6px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        &:after {
+            content: none;
+        }
+    }
 }

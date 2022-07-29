@@ -10,6 +10,7 @@
 @import 'base/base'; // Other global styles (h1, ul, visually-hidden, etc.)
 
 // Small components
+@import 'components/aos'; // Script animation
 @import 'components/b-contacts'; // Block contact information
 @import 'components/buttons';
 @import 'components/banners';

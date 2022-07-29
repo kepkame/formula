@@ -1,30 +1,58 @@
+/* jshint browser: true */
 // Popups
 
 // Popup – Feedback
-if ($('#popup-feedback') && $('.btn-feedback')) {
-    var popup = $('#popup-feedback');
-    var btnsOpenPopup = $('.btn-feedback');
-    var btnClosePopup = $('#popup-feedback-close');
+if ($('.popup')) {
+  let body = $('body');
 
-    btnsOpenPopup.on('click', function(event) {
-        $('body').addClass('fixed');
-        $('.popup').addClass('popup--open');
-    });
+  // Var Feedback popup
+  let popupFeedback = $('#popup-feedback');
+  let popupFeedbackBtnsOpen = $('.btn-feedback');
+  let popupFeedbackBtnsClose = $('#popup-feedback-close');
 
-    btnClosePopup.on('click', function(event) {
-        $('body').removeClass('fixed');
-        $('.popup').removeClass('popup--open');
-    });
+  // Open popup
+  function openPopup(classPopup = $('.popup')) {
+    body.addClass('fixed');
+    classPopup.addClass('popup--show');
+    
+    setTimeout(function() {
+      classPopup.addClass('popup--open');
+    }, 100);
+  }
+  
+  // Close popup
+  function closePopup(classPopup = $('.popup')) {
+    body.removeClass('fixed');
+    classPopup.addClass('popup--close');
+    
+    setTimeout(function() {
+      classPopup.removeClass('popup--open');
+      classPopup.removeClass('popup--show');
+      $('.site-header__mobile-menu-bg').remove();
+      classPopup.removeClass('popup--close');
+    }, 760);
 
-    $('.popup-feedback__bg').on('click', function(event) {
-        $('body').removeClass('fixed');
-        $('.popup').removeClass('popup--open');
-    });
+  }
 
-    $(document).keyup(function(e) {
-        if (e.key === "Escape" || e.keyCode === 27) {
-            $('body').removeClass('fixed');
-            $('.popup').removeClass('popup--open');
-        }
-    });
+  // Click on the button to open Feedback popup
+  popupFeedbackBtnsOpen.on('click', function(event) {
+    openPopup(popupFeedback);
+  });
+
+  // Click on the button to close Feedback popup
+  popupFeedbackBtnsClose.on('click', function(event) {
+    closePopup(popupFeedback);
+  });
+
+  // Click on the background below the popup to close Feedback popup
+  $('#popup-feedback .popup__bg').on('click', function(event) {
+    closePopup(popupFeedback);
+  });
+
+  // Click on the key Esc to close Feedback popup
+  $(document).keyup(function(e) {
+    if (e.key === "Escape" || e.keyCode === 27) {
+      closePopup(popupFeedback);
+    }
+  });
 }
