@@ -53,7 +53,6 @@ a {
     &:focus,
     &:hover {
         color: $color-primary-hover;
-        // color: $color-primary-hover;
     }
 }
 
@@ -73,7 +72,6 @@ body.fixed {
 
 .title-line {
     position: relative;
-    // margin-bottom: 63px;
     margin-bottom: 52px;
 
     &:after {
@@ -120,11 +118,6 @@ body.fixed {
 }
 
 @media screen and (min-width: 850px) {
-    h1, h2, h3, h4, h5, h6 {
-        // margin-top: ;
-        // margin-bottom: ;
-    }
-
     h1 {
         font-size: 60px;
         line-height: 72px;
@@ -159,7 +152,4 @@ body.fixed {
             bottom: -22px;
         }
     }
-}
-
-@media (min-width: 850px) {
 }
